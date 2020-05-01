@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 47272-0001
+D DP Receptable
+F Conn Display Port RCP 20 POS 0.5mm Solder RA SMD 20 Terminal 1 Port DisplayPort T/R
+$ENDCMP
+#
+#End Doc Library

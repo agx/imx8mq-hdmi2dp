@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name hdmi2dp)(type KiCad)(uri ${KIPRJMOD}/hdmi2dp.pretty)(options "")(descr ""))
+)

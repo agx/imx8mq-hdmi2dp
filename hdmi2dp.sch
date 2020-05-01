@@ -1,0 +1,775 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "imx8mq HDMI-to-DP Converter"
+Date ""
+Rev "0.0.0"
+Comp "Purism SPC"
+Comment1 "Reference https://community.nxp.com/thread/491629"
+Comment2 ""
+Comment3 ""
+Comment4 "License GPL3+"
+$EndDescr
+$Comp
+L power:GND #PWR02
+U 1 1 5EAC64F0
+P 5600 7450
+F 0 "#PWR02" H 5600 7200 50  0001 C CNN
+F 1 "GND" H 5605 7277 50  0000 C CNN
+F 2 "" H 5600 7450 50  0001 C CNN
+F 3 "" H 5600 7450 50  0001 C CNN
+	1    5600 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 5250 5600 5250
+Wire Wire Line
+	5600 5250 5600 5550
+Wire Wire Line
+	6150 5550 5600 5550
+Connection ~ 5600 5550
+Wire Wire Line
+	5600 5550 5600 5850
+Wire Wire Line
+	6150 5850 5600 5850
+Connection ~ 5600 5850
+Wire Wire Line
+	5600 5850 5600 6150
+Wire Wire Line
+	6150 6150 5600 6150
+Connection ~ 5600 6150
+Wire Wire Line
+	6150 6650 5600 6650
+$Comp
+L Device:R_US R1
+U 1 1 5EAC93CB
+P 5750 6350
+F 0 "R1" V 5545 6350 50  0000 C CNN
+F 1 "1M" V 5636 6350 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5790 6340 50  0001 C CNN
+F 3 "~" H 5750 6350 50  0001 C CNN
+	1    5750 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5EACD117
+P 6000 6450
+F 0 "R2" V 5795 6450 50  0000 C CNN
+F 1 "1M" V 5886 6450 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6040 6440 50  0001 C CNN
+F 3 "~" H 6000 6450 50  0001 C CNN
+	1    6000 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5EAD19C6
+P 1900 5350
+F 0 "C3" V 1648 5350 50  0000 C CNN
+F 1 "0,1uF" V 1739 5350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1938 5200 50  0001 C CNN
+F 3 "~" H 1900 5350 50  0001 C CNN
+	1    1900 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 5EAD3DE9
+P 3200 5650
+F 0 "C9" V 2948 5650 50  0000 C CNN
+F 1 "0,1uF" V 3039 5650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3238 5500 50  0001 C CNN
+F 3 "~" H 3200 5650 50  0001 C CNN
+	1    3200 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5EAD3DF3
+P 2950 5450
+F 0 "C6" V 2698 5450 50  0000 C CNN
+F 1 "0,1uF" V 2789 5450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2988 5300 50  0001 C CNN
+F 3 "~" H 2950 5450 50  0001 C CNN
+	1    2950 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5EAD763B
+P 1900 5950
+F 0 "C4" V 1648 5950 50  0000 C CNN
+F 1 "0,1uF" V 1739 5950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1938 5800 50  0001 C CNN
+F 3 "~" H 1900 5950 50  0001 C CNN
+	1    1900 5950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5EAD7645
+P 1650 5750
+F 0 "C2" V 1398 5750 50  0000 C CNN
+F 1 "0,1uF" V 1489 5750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1688 5600 50  0001 C CNN
+F 3 "~" H 1650 5750 50  0001 C CNN
+	1    1650 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 5EAD764F
+P 3200 6250
+F 0 "C10" V 2948 6250 50  0000 C CNN
+F 1 "0,1uF" V 3039 6250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3238 6100 50  0001 C CNN
+F 3 "~" H 3200 6250 50  0001 C CNN
+	1    3200 6250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5EAD7659
+P 2950 6050
+F 0 "C7" V 2698 6050 50  0000 C CNN
+F 1 "0,1uF" V 2789 6050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2988 5900 50  0001 C CNN
+F 3 "~" H 2950 6050 50  0001 C CNN
+	1    2950 6050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3350 5650 6150 5650
+Wire Wire Line
+	3100 5450 6150 5450
+Wire Wire Line
+	3350 6250 6150 6250
+Wire Wire Line
+	6150 6050 3100 6050
+Wire Wire Line
+	2050 5950 6150 5950
+Wire Wire Line
+	6150 5750 1800 5750
+Wire Wire Line
+	2050 5350 6150 5350
+Wire Wire Line
+	5600 6650 5600 6950
+Connection ~ 5600 6650
+$Comp
+L Device:C C1
+U 1 1 5EB08EB3
+P 1650 5150
+F 0 "C1" V 1398 5150 50  0000 C CNN
+F 1 "0,1uF" V 1489 5150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1688 5000 50  0001 C CNN
+F 3 "~" H 1650 5150 50  0001 C CNN
+	1    1650 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1800 5150 6150 5150
+Text Label 700  5150 0    50   ~ 0
+HDMI_TX2P
+Text Label 700  5350 0    50   ~ 0
+HDMI_TX2N
+Text Label 700  5750 0    50   ~ 0
+HDMI_TX0P
+Text Label 700  5950 0    50   ~ 0
+HDMI_TX0N
+Text Label 700  5450 0    50   ~ 0
+HDMI_TX1P
+Text Label 700  5650 0    50   ~ 0
+HDMI_TX1N
+Text Label 700  6050 0    50   ~ 0
+HDMI_CLKP
+Text Label 700  6250 0    50   ~ 0
+HDMI_CLKN
+Wire Wire Line
+	700  5150 1500 5150
+Wire Wire Line
+	700  5350 1750 5350
+Wire Wire Line
+	700  5450 2800 5450
+Wire Wire Line
+	3050 5650 700  5650
+Wire Wire Line
+	700  5750 1500 5750
+Wire Wire Line
+	700  5950 1750 5950
+Wire Wire Line
+	700  6050 2800 6050
+Wire Wire Line
+	3050 6250 700  6250
+Text Label 8300 1850 0    50   ~ 0
+HDMI_TX2P
+Text Label 8300 1950 0    50   ~ 0
+HDMI_TX2N
+Text Label 8300 2250 0    50   ~ 0
+HDMI_TX0P
+Text Label 8300 2350 0    50   ~ 0
+HDMI_TX0N
+Text Label 8300 2050 0    50   ~ 0
+HDMI_TX1P
+Text Label 8300 2150 0    50   ~ 0
+HDMI_TX1N
+Text Label 8300 2450 0    50   ~ 0
+HDMI_CLKP
+Text Label 8300 2550 0    50   ~ 0
+HDMI_CLKN
+$Comp
+L Regulator_Linear:AMS1117-3.3 U1
+U 1 1 5EA33577
+P 2550 1800
+F 0 "U1" H 2550 2042 50  0000 C CNN
+F 1 "AMS1117-3.3" H 2550 1951 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2550 2000 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 2650 1550 50  0001 C CNN
+	1    2550 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 5EB319D0
+P 2000 1950
+F 0 "C8" H 2115 1996 50  0000 L CNN
+F 1 "0,1uF" H 2115 1905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2038 1800 50  0001 C CNN
+F 3 "~" H 2000 1950 50  0001 C CNN
+	1    2000 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5EB32865
+P 1600 1950
+F 0 "C5" H 1715 1996 50  0000 L CNN
+F 1 "22uF" H 1715 1905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1638 1800 50  0001 C CNN
+F 3 "~" H 1600 1950 50  0001 C CNN
+	1    1600 1950
+	1    0    0    -1  
+$EndComp
+Text Label 1100 1800 0    50   ~ 0
+DCDC_5V
+Wire Wire Line
+	1100 1800 1600 1800
+Wire Wire Line
+	1600 1800 2000 1800
+Connection ~ 1600 1800
+Wire Wire Line
+	2000 1800 2250 1800
+Connection ~ 2000 1800
+Wire Wire Line
+	2000 2100 1600 2100
+$Comp
+L power:GND #PWR01
+U 1 1 5EB3AC6C
+P 1600 2300
+F 0 "#PWR01" H 1600 2050 50  0001 C CNN
+F 1 "GND" H 1605 2127 50  0000 C CNN
+F 2 "" H 1600 2300 50  0001 C CNN
+F 3 "" H 1600 2300 50  0001 C CNN
+	1    1600 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 2100 1600 2300
+Connection ~ 1600 2100
+$Comp
+L Device:C C13
+U 1 1 5EB4B210
+P 3100 1950
+F 0 "C13" H 3215 1996 50  0000 L CNN
+F 1 "0,1uF" H 3215 1905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3138 1800 50  0001 C CNN
+F 3 "~" H 3100 1950 50  0001 C CNN
+	1    3100 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 5EB4C046
+P 3550 1950
+F 0 "C14" H 3665 1996 50  0000 L CNN
+F 1 "22uF" H 3665 1905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3588 1800 50  0001 C CNN
+F 3 "~" H 3550 1950 50  0001 C CNN
+	1    3550 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 1800 3100 1800
+Text Label 3800 1800 0    50   ~ 0
+VDD_3V3
+Wire Wire Line
+	3100 1800 3550 1800
+Connection ~ 3100 1800
+Wire Wire Line
+	3550 1800 3900 1800
+Connection ~ 3550 1800
+$Comp
+L power:GND #PWR06
+U 1 1 5EB57F83
+P 3100 2200
+F 0 "#PWR06" H 3100 1950 50  0001 C CNN
+F 1 "GND" H 3105 2027 50  0000 C CNN
+F 2 "" H 3100 2200 50  0001 C CNN
+F 3 "" H 3100 2200 50  0001 C CNN
+	1    3100 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2100 3100 2200
+Wire Wire Line
+	3100 2100 3550 2100
+Connection ~ 3100 2100
+Connection ~ 10350 1050
+Wire Wire Line
+	10350 700  10350 1050
+Text Label 10350 700  0    50   ~ 0
+DCDC_5V
+Connection ~ 10700 1400
+Wire Wire Line
+	10650 1400 10700 1400
+Wire Wire Line
+	10700 1050 10700 1400
+Wire Wire Line
+	10650 1050 10700 1050
+$Comp
+L power:GND #PWR05
+U 1 1 5EB2894A
+P 10700 1400
+F 0 "#PWR05" H 10700 1150 50  0001 C CNN
+F 1 "GND" H 10705 1227 50  0000 C CNN
+F 2 "" H 10700 1400 50  0001 C CNN
+F 3 "" H 10700 1400 50  0001 C CNN
+	1    10700 1400
+	1    0    0    -1  
+$EndComp
+Connection ~ 10350 1400
+Wire Wire Line
+	10350 1050 10350 1400
+Wire Wire Line
+	10350 1550 10350 1400
+$Comp
+L Device:C C11
+U 1 1 5EB234D3
+P 10500 1050
+F 0 "C11" V 10248 1050 50  0000 C CNN
+F 1 "10uF" V 10339 1050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 10538 900 50  0001 C CNN
+F 3 "~" H 10500 1050 50  0001 C CNN
+	1    10500 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 5EB24A5F
+P 10500 1400
+F 0 "C12" V 10248 1400 50  0000 C CNN
+F 1 "0,1uF" V 10339 1400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 10538 1250 50  0001 C CNN
+F 3 "~" H 10500 1400 50  0001 C CNN
+	1    10500 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9950 2550 8300 2550
+Wire Wire Line
+	8300 2450 9950 2450
+Wire Wire Line
+	9950 2350 8300 2350
+Wire Wire Line
+	8300 2250 9950 2250
+Wire Wire Line
+	9950 2150 8300 2150
+Wire Wire Line
+	9950 2050 8300 2050
+Wire Wire Line
+	9950 1950 8300 1950
+Wire Wire Line
+	8300 1850 9950 1850
+Wire Wire Line
+	10550 3750 10550 3900
+$Comp
+L power:GND #PWR04
+U 1 1 5EAFEBD4
+P 10450 4000
+F 0 "#PWR04" H 10450 3750 50  0001 C CNN
+F 1 "GND" H 10455 3827 50  0000 C CNN
+F 2 "" H 10450 4000 50  0001 C CNN
+F 3 "" H 10450 4000 50  0001 C CNN
+	1    10450 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:HDMI_A J1
+U 1 1 5EA3205D
+P 10350 2650
+F 0 "J1" H 10780 2696 50  0000 L CNN
+F 1 "HDMI_A" H 10780 2605 50  0000 L CNN
+F 2 "hdmi2dp:AMPHENOL_10029449-001RLF" H 10375 2650 50  0001 C CNN
+F 3 "https://en.wikipedia.org/wiki/HDMI" H 10375 2650 50  0001 C CNN
+	1    10350 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 3750 10150 3900
+Wire Wire Line
+	10150 3900 10250 3900
+Connection ~ 10250 3900
+Wire Wire Line
+	10250 3900 10350 3900
+Wire Wire Line
+	10350 3750 10350 3900
+Connection ~ 10350 3900
+Wire Wire Line
+	10350 3900 10450 3900
+Wire Wire Line
+	10450 3750 10450 3900
+Connection ~ 10450 3900
+Wire Wire Line
+	10450 3900 10550 3900
+Wire Wire Line
+	10450 3900 10450 4000
+Text Label 8300 2750 0    50   ~ 0
+HDMI_CEC
+$Comp
+L Device:C C17
+U 1 1 5EB927AD
+P 5250 7200
+F 0 "C17" H 5365 7246 50  0000 L CNN
+F 1 "1uF" H 5365 7155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5288 7050 50  0001 C CNN
+F 3 "~" H 5250 7200 50  0001 C CNN
+	1    5250 7200
+	1    0    0    -1  
+$EndComp
+Text Label 700  7050 0    50   ~ 0
+VDD_3V3
+Wire Wire Line
+	6150 7050 5250 7050
+$Comp
+L power:GND #PWR07
+U 1 1 5EB9795A
+P 5250 7450
+F 0 "#PWR07" H 5250 7200 50  0001 C CNN
+F 1 "GND" H 5255 7277 50  0000 C CNN
+F 2 "" H 5250 7450 50  0001 C CNN
+F 3 "" H 5250 7450 50  0001 C CNN
+	1    5250 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 7350 5250 7450
+Wire Wire Line
+	5600 6150 5600 6350
+Connection ~ 5600 6350
+Wire Wire Line
+	5600 6350 5600 6450
+Wire Wire Line
+	6150 6350 5900 6350
+Wire Wire Line
+	5850 6450 5600 6450
+Connection ~ 5600 6450
+Wire Wire Line
+	5600 6450 5600 6650
+$Comp
+L Device:C C15
+U 1 1 5EBADD6C
+P 2350 6550
+F 0 "C15" V 2098 6550 50  0000 C CNN
+F 1 "0,1uF" V 2189 6550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2388 6400 50  0001 C CNN
+F 3 "~" H 2350 6550 50  0001 C CNN
+	1    2350 6550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6150 6950 5600 6950
+Connection ~ 5600 6950
+Wire Wire Line
+	5600 6950 5600 7450
+Text Label 8300 2950 0    50   ~ 0
+HDMI_DDC_SCL
+Text Label 8300 3050 0    50   ~ 0
+HDMI_DDC_SCA
+$Comp
+L Device:R_US R3
+U 1 1 5EACC65E
+P 7250 3650
+F 0 "R3" H 7318 3696 50  0000 L CNN
+F 1 ">100K" H 7318 3605 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7290 3640 50  0001 C CNN
+F 3 "~" H 7250 3650 50  0001 C CNN
+	1    7250 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5EACDCA8
+P 7250 4000
+F 0 "#PWR08" H 7250 3750 50  0001 C CNN
+F 1 "GND" H 7255 3827 50  0000 C CNN
+F 2 "" H 7250 4000 50  0001 C CNN
+F 3 "" H 7250 4000 50  0001 C CNN
+	1    7250 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 3800 7250 4000
+Text Notes 8850 1500 0    50   ~ 0
+HDMI receptable facing devkit:
+Wire Wire Line
+	8300 3350 9950 3350
+Text Label 3850 6850 0    50   ~ 0
+HDMI_HPD
+Wire Wire Line
+	3850 6850 4350 6850
+$Comp
+L Device:R_US R6
+U 1 1 5EB00CBF
+P 4350 7250
+F 0 "R6" H 4418 7296 50  0000 L CNN
+F 1 "1M" H 4418 7205 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4390 7240 50  0001 C CNN
+F 3 "~" H 4350 7250 50  0001 C CNN
+	1    4350 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5EB02B98
+P 4350 7450
+F 0 "#PWR010" H 4350 7200 50  0001 C CNN
+F 1 "GND" H 4355 7277 50  0000 C CNN
+F 2 "" H 4350 7450 50  0001 C CNN
+F 3 "" H 4350 7450 50  0001 C CNN
+	1    4350 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 7450 4350 7400
+Wire Wire Line
+	4350 7100 4350 6850
+Connection ~ 4350 6850
+Wire Wire Line
+	4350 6850 6150 6850
+$Comp
+L Device:R_US R5
+U 1 1 5EB085C6
+P 3250 6900
+F 0 "R5" H 3318 6946 50  0000 L CNN
+F 1 "100K" H 3318 6855 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3290 6890 50  0001 C CNN
+F 3 "~" H 3250 6900 50  0001 C CNN
+	1    3250 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 7050 3250 7050
+Connection ~ 5250 7050
+$Comp
+L Device:R_US R4
+U 1 1 5EB185BD
+P 3050 7300
+F 0 "R4" H 3118 7346 50  0000 L CNN
+F 1 "100K" H 3118 7255 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3090 7290 50  0001 C CNN
+F 3 "~" H 3050 7300 50  0001 C CNN
+	1    3050 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5EB1C3F9
+P 3050 7450
+F 0 "#PWR09" H 3050 7200 50  0001 C CNN
+F 1 "GND" H 3055 7277 50  0000 C CNN
+F 2 "" H 3050 7450 50  0001 C CNN
+F 3 "" H 3050 7450 50  0001 C CNN
+	1    3050 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 7150 3050 6550
+$Comp
+L 47272-0001:47272-0001 J2
+U 1 1 5EAC1498
+P 6550 6150
+F 0 "J2" H 6780 6146 50  0000 L CNN
+F 1 "47272-0001" H 6780 6055 50  0000 L CNN
+F 2 "hdmi2dp:MOLEX_47272-0001" H 6550 6150 50  0001 L BNN
+F 3 "Conn Display Port RCP 20 POS 0.5mm Solder RA SMD 20 Terminal 1 Port DisplayPort T/R" H 6550 6150 50  0001 L BNN
+F 4 "DP Receptable" H 6235 7370 50  0000 L TNN "Field4"
+F 5 "None" H 6550 6150 50  0001 L BNN "Field5"
+F 6 "Molex" H 6550 6150 50  0001 L BNN "Field6"
+F 7 "None" H 6550 6150 50  0001 L BNN "Field7"
+F 8 "47272-0001" H 6550 6150 50  0001 L BNN "Field8"
+	1    6550 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 7250 5950 7450
+Wire Wire Line
+	6150 7250 5950 7250
+Wire Wire Line
+	9950 3250 8300 3250
+Wire Wire Line
+	10250 3750 10250 3900
+$Comp
+L Device:R_US R8
+U 1 1 5EAF0A44
+P 8150 3650
+F 0 "R8" H 8218 3696 50  0000 L CNN
+F 1 ">100K" H 8218 3605 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8190 3640 50  0001 C CNN
+F 3 "~" H 8150 3650 50  0001 C CNN
+	1    8150 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R7
+U 1 1 5EAF5036
+P 7700 3650
+F 0 "R7" H 7768 3696 50  0000 L CNN
+F 1 ">100K" H 7768 3605 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7740 3640 50  0001 C CNN
+F 3 "~" H 7700 3650 50  0001 C CNN
+	1    7700 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 2750 7250 3500
+Wire Wire Line
+	7700 2950 7700 3500
+Wire Wire Line
+	7700 2950 9950 2950
+Wire Wire Line
+	8150 3050 8150 3500
+Wire Wire Line
+	8150 3050 9950 3050
+$Comp
+L power:GND #PWR011
+U 1 1 5EB06EDA
+P 7700 4000
+F 0 "#PWR011" H 7700 3750 50  0001 C CNN
+F 1 "GND" H 7705 3827 50  0000 C CNN
+F 2 "" H 7700 4000 50  0001 C CNN
+F 3 "" H 7700 4000 50  0001 C CNN
+	1    7700 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 3800 7700 4000
+$Comp
+L power:GND #PWR012
+U 1 1 5EB0A001
+P 8150 4000
+F 0 "#PWR012" H 8150 3750 50  0001 C CNN
+F 1 "GND" H 8155 3827 50  0000 C CNN
+F 2 "" H 8150 4000 50  0001 C CNN
+F 3 "" H 8150 4000 50  0001 C CNN
+	1    8150 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 3800 8150 4000
+Wire Wire Line
+	7250 2750 9950 2750
+$Comp
+L power:Earth #PWR0101
+U 1 1 5EB17398
+P 10650 4000
+F 0 "#PWR0101" H 10650 3750 50  0001 C CNN
+F 1 "Earth" H 10650 3850 50  0001 C CNN
+F 2 "" H 10650 4000 50  0001 C CNN
+F 3 "~" H 10650 4000 50  0001 C CNN
+	1    10650 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 3750 10650 4000
+$Comp
+L power:Earth #PWR0102
+U 1 1 5EB1D7D6
+P 5950 7450
+F 0 "#PWR0102" H 5950 7200 50  0001 C CNN
+F 1 "Earth" H 5950 7300 50  0001 C CNN
+F 2 "" H 5950 7450 50  0001 C CNN
+F 3 "~" H 5950 7450 50  0001 C CNN
+	1    5950 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2100 2000 2100
+Connection ~ 2000 2100
+Text Label 4150 5150 0    50   ~ 0
+DP0_P
+Text Label 4150 5350 0    50   ~ 0
+DP0_N
+Text Label 4150 5450 0    50   ~ 0
+DP1_P
+Text Label 4150 5650 0    50   ~ 0
+DP1_N
+Text Label 4150 5750 0    50   ~ 0
+DP2_P
+Text Label 4150 5950 0    50   ~ 0
+DP2_N
+Text Label 4150 6050 0    50   ~ 0
+DP3_P
+Text Label 4150 6250 0    50   ~ 0
+DP3_N
+Text Label 4150 6550 0    50   ~ 0
+DP_AUX_P
+Text Label 4150 6750 0    50   ~ 0
+DP_AUX_N
+Text Label 8300 3350 0    50   ~ 0
+HDMI_HPD
+Text Label 8300 3250 0    50   ~ 0
+HDMI_UTILITY
+Text Label 700  6750 0    50   ~ 0
+HDMI_HPD
+Text Label 700  6550 0    50   ~ 0
+HDMI_UTILITY
+Text Label 9150 3250 0    50   ~ 0
+HDMI_HEACP
+Text Label 9150 3350 0    50   ~ 0
+HDMI_HEACN
+Text Label 1250 6550 0    50   ~ 0
+HDMI_HEACP
+Text Label 1250 6750 0    50   ~ 0
+HDMI_HEACN
+Connection ~ 3250 7050
+Wire Wire Line
+	700  7050 3250 7050
+Wire Wire Line
+	3250 6750 6150 6750
+Wire Wire Line
+	3050 6550 6150 6550
+$Comp
+L Device:C C16
+U 1 1 5EBAF1CC
+P 2700 6750
+F 0 "C16" V 2448 6750 50  0000 C CNN
+F 1 "0,1uF" V 2539 6750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2738 6600 50  0001 C CNN
+F 3 "~" H 2700 6750 50  0001 C CNN
+	1    2700 6750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	700  6750 2550 6750
+Wire Wire Line
+	2850 6750 3250 6750
+Connection ~ 3250 6750
+Wire Wire Line
+	700  6550 2200 6550
+Wire Wire Line
+	2500 6550 3050 6550
+Connection ~ 3050 6550
+$EndSCHEMATC
